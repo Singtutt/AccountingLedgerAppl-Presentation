@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>BankingApp</artifactId>
+    <artifactId>LedgerApplication</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
