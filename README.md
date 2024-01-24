@@ -1,5 +1,5 @@
 # LegendaryLedger
-Capstone Project 1: Ledger Application
+Capstone Project 1: Ledger Application Refresher
 **************************************
 Overview:
 -This project is made to be a mock ledger that will allow for
@@ -60,10 +60,6 @@ positive value while the other returns negative.
 
 ![addDepositSnip](https://github.com/Skronkulous/LegendaryLedger/assets/68873730/394e7fb8-91e4-46f5-a1f0-016f0fdec7a1)
 
-NOTE: I just realized I could have put these into the same method and
-used a public static variable in the menu class where these are called to
-so that it would know if the user selected the Payment or Deposit. This may
-be a change I implement in the future.
 ************************************
 Display Functionality:
 -1) Show All: As the method name implies, this will show all of the 
@@ -80,10 +76,6 @@ difference is the sign of the amount it is retrieving (negative or positive).
 ![paymentDisplaySnip](https://github.com/Skronkulous/LegendaryLedger/assets/68873730/ef03ca43-c7d7-43f5-9952-f8de1d142048)
 ![depositDisplaySnip](https://github.com/Skronkulous/LegendaryLedger/assets/68873730/2243d729-def1-4187-8d83-7e689efe282e)
 
-NOTE: As I was writing this I realized that I could have put them both into the
-same HashMap (new and old) and sorted by date when I was outputting. Also compared
-the HashMap to the current CSV file to see what needs to be appended based off of
-the differences (Not sure if this is easier but it is an option I thought of).
 ***********************************
 Searching Functionality:
 -1)Month To Date / Year To Date: These methods will first retrieve the dates from both
@@ -126,14 +118,12 @@ ArrayList.
 ![customSearchSnip](https://github.com/Skronkulous/LegendaryLedger/assets/68873730/20afc179-8d6c-4035-b2ac-c80f4c12cf91)
 ![customSearchSnip2](https://github.com/Skronkulous/LegendaryLedger/assets/68873730/9fd2bc01-972e-4f2a-aa4d-e69a9978fb0d)
 
-NOTE: This was much much more confusing when I first wrote it until I added the beginning and
-end dates that are initialized at the start.
 ***********************************
 Additional Notes:
 -All of these methods are completely recursive (unless I missed something), so ignore the little bit
 of bloat at the bottom of the methods, it makes it seem bigger than it really is.
--Also, I enjoy using Try Catch satements instead of throwing IOException so you can have
+-Also, I enjoy using Try Catch statements instead of throwing IOException so you can have
 custom error messages. In the mind of the user, they know nothing about this program other than
-the fact that it should work. However when an error does pop up, they should be able to recognize
+the fact that it should work. However, when an error does pop up, they should be able to recognize
 why it showed up in the first place. Even though it is just us using these programs, I still
 feel it is a good habit to get into.
